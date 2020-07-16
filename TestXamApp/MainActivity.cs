@@ -13,6 +13,8 @@ namespace TestXamApp
     public class MainActivity : AppCompatActivity
     {
 
+        TextView text;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -24,6 +26,13 @@ namespace TestXamApp
 
             FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
             fab.Click += FabOnClick;
+
+            text = FindViewById<TextView>(Resource.Id.text);
+
+            FindViewById<Button>(Resource.Id.btnYes).Click += (e, o) => text.Text = "Yes";
+            FindViewById<Button>(Resource.Id.btnNo).Click += (e, o) => text.Text = "No";
+            FindViewById<Button>(Resource.Id.btnMayBe).Click += (e, o) => text.Text = "May be";
+
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
