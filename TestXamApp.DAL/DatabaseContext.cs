@@ -26,7 +26,7 @@ namespace TestXamApp.DAL
         public DbSet<Connection> Connections { get; set; }
         public DbSet<Match> Matches { get; set; }
         public DbSet<UserType> UserTypes { get; set; }
-
+        public DbSet<Message> Messages { get; set; }
 
     }
 }

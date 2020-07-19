@@ -6,5 +6,7 @@ namespace TestXamApp.DAL.Entities
 {
     public class Match
     {
+        public long Id { get; set; }
+
     }
 }
