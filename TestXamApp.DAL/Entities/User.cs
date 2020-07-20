@@ -12,8 +12,8 @@ namespace TestXamApp.DAL.Entities
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Desription { get; set; }
-
         public UserType UserType { get; set; }
+        public UserType Interest { get; set; }
 
     }
 }
