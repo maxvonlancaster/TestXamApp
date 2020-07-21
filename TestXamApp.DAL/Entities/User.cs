@@ -14,6 +14,8 @@ namespace TestXamApp.DAL.Entities
         public string Desription { get; set; }
         public UserType UserType { get; set; }
         public UserType Interest { get; set; }
-
+        public int Age { get; set; }
+        public int InterestAgeStart { get; set; }
+        public int InterestAgeEnd { get; set; }
     }
 }
