@@ -9,5 +9,7 @@ namespace TestXamApp.DAL.Entities
         public long Id { get; set; }
         public User UserOne { get; set; }
         public User UserTwo { get; set; }
+        public bool Archived { get; set; }
+
     }
 }
